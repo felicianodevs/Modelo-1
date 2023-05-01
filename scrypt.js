@@ -70,14 +70,14 @@ async function showpatients() {
         <td>${patient.cpf}</td>
         
         
-        <td class="text-center"> <button  type="button" class="btn p-0 border-0 border-0"><a href="/Projeto Psicologia/prontuario.html"><img  class="green " src="/Projeto Psicologia/icones/calendar-icon.svg" alt=""></a></button> 
+        <td class="text-center"> <button  type="button" class="btn p-0 border-0 border-0"><a href="/prontuario.html"><img  class="green " src="/icones/calendar-icon.svg" alt=""></a></button> 
 
         <button data-bs-toggle="modal" data-bs-target="#editpatient
         " onclick="editpatient(${patient.id})" type="button" class="btn p-0 border-0 border-0">
 
-        <img class="blue" src="../Projeto Psicologia/icones/pen-edit.svg" alt=""></button> 
+        <img class="blue" src="/icones/pen-edit.svg" alt=""></button> 
 
-        <button onclick="deletepatient(${patient.id})" type="button" class="btn p-0 border-0 border-0"><img class="red" src="/Projeto Psicologia/icones/trash-icon.svg" alt=""></button></td>
+        <button onclick="deletepatient(${patient.id})" type="button" class="btn p-0 border-0 border-0"><img class="red" src="/icones/trash-icon.svg" alt=""></button></td>
       </tr>
       `;
     allpatients.innerHTML += html;
