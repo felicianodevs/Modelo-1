@@ -1,3 +1,6 @@
+const universal = 'https://projeto-arnia.onrender.com'
+
+
 const BtnCreate = document.querySelector("#create");
 async function pegarvalor() {
   const documento = document.querySelector("#cpf");
@@ -46,7 +49,8 @@ async function pegarvalor() {
 // BtnCreate.addEventListener('click',pegarvalor)
 
 async function inserirdadosApi(firstposition) {
-  return fetch("http://localhost:3000/patients",{
+  return fetch(universal+"/patients",{
+    
     method: "POST", // metodo POST ele salva informaçoes no DB.JSON //
     headers: {
       Accept: "application/json, text/plain, */*",
@@ -57,7 +61,7 @@ async function inserirdadosApi(firstposition) {
 }
 
 async function showpatients() {
-  const response = await fetch("http://localhost:3000/patients");
+  const response = await fetch(universal+"/patients");
   const patientes = await response.json();
   const allpatients = document.getElementById("allpatients");
   console.log(allpatients)
@@ -87,7 +91,7 @@ async function showpatients() {
 showpatients();
 
 async function paxedit(id, firstposition) {
-  return fetch(`http://localhost:3000/patients/`, {
+  return fetch(universal+"/patients", {
     method: "PUT", // metodo Put edita dados do modal
     headers: {
       Accept: "application/json, text/plain, */*",
@@ -98,14 +102,14 @@ async function paxedit(id, firstposition) {
 }
 
 async function deletepatient(id) {
-  await fetch(`http://localhost:3000/patients/${id}`, {
+  await fetch(universal+`/patients/${id}`, {
     method: "DELETE",
   });
 }
 
 let pacienteid = null
 async function editpatient(id) {
-  const response = await fetch(`http://localhost:3000/patients/${id}`);
+  const response = await fetch(universal+`/patients/${id}`);
   const pacienteresponse = await response.json();
   
   document.querySelector("#editnome").value = pacienteresponse.nome
@@ -293,7 +297,7 @@ async function editpatient(id) {
 
 async function salvarpaciente(id) {
   //esta funçao pega o paciente por id que esta sendo editado no momento e armazena em um objeto//
-  const response = await fetch(`http://localhost:3000/patients/${id}`);
+  const response = await fetch(universal+`/patients/${id}`);
   const pacienteresponse = await response.json();
   console.log(pacienteresponse)
 
@@ -316,7 +320,7 @@ async function salvarpaciente(id) {
 }
  // esta funçao funciona para atualizar os dasdos do paciente qu estao sendo atualizados no momento //
 async function saveedit(id, editar) {
-  await fetch(`http://localhost:3000/patients/${id}`, {
+  await fetch(universal+`/patients/${id}`, {
     method: "PUT", // metodo Put edita dados do modal
     headers: {
       Accept: "application/json, text/plain, */*",

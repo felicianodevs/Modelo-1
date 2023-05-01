@@ -74,21 +74,6 @@
       "estadocivil": "Solteiro",
       "mae": "Vanda Batista Valle",
       "pai": "Josildo Barrada Portugal"
-    },
-    {
-      "nome": "Luiz Carlos Barros Garbelini",
-      "cpf": "59224255795",
-      "datadenascimento": "2000-11-17",
-      "email": "luiz.garbelini@gmail.com",
-      "sexo": "Masculino",
-      "nacionalidade": "Brasileira",
-      "naturalidade": "Petropolis RJ",
-      "profissao": "Carpinteiro",
-      "escolaridade": "Ensino Medio",
-      "estadocivil": "Casado",
-      "mae": "Dandara Duarte Barros",
-      "pai": "Arthur Laporte Garbelini",
-      "id": 6
     }
   ]
 }
