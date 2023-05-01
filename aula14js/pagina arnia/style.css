@@ -1,0 +1,43 @@
+
+
+.box{
+    height: 60px;
+    width: 600px;
+    background-color: rgb(228, 228, 228);
+    margin-top: 15px;
+    border-radius: 10px;
+    }
+
+.box1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+ button{
+    border-radius: 10px;
+    border: solid 1px;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    background-color:  #7157a9;
+    color: rgb(255, 255, 255);
+    
+    
+    
+    
+            
+   
+}
+bottom:hover{
+    background-color: rgb(153, 98, 230);
+    
+}
+.resposta{
+    display: none;
+
+}
+.display{
+    display: none;
+}

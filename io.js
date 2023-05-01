@@ -13,5 +13,13 @@ exports.read = () => {
   return res;
 }
 
+exports.readInt = () => {
+  res = teclado();
+  return parseInt(res);
+}
 
+exports.readFloat = () => {
+  res = teclado();
+  return parseFloat(res);
+}
 

@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+.box-login {
+  background-color: #017849;
+  border-radius: 16px;
+}
+
+.box-login button {
+  border: solid 1px white;
+  color: aliceblue;
+  width: 100%;
+}
+
+#box1 {
+  width: 379px;
+  height: 479px;
+}
+
+#welcome h4 {
+  font-size: 18px;
+  color: #00995d;
+}
+
+#welcome2 h4 {
+  font-size: 18px;
+  color: #00995d;
+}
+
+#paciente {
+  border: so;
+}
+h1 {
+  color: #4f4f4f;
+}
+
+tr, th, td {
+  border: solid 1px #e0e0e0;
+  
+}
+
+th{
+  text-align: center;
+  
+}
+#btn-close{
+  background-color: white;
+}
+
+
+
+
+.green {
+  border: solid 1px green;  
+  width: 32px;
+  height: 24px;
+  padding: 3px;
+  border-radius: 5px;
+}
+.blue {
+  border: solid 1px blue;
+  width: 32px;
+  height: 24px;
+  padding: 3px;
+  border-radius: 5px;
+}
+.red {
+  border: solid 1px red;
+  width: 32px;
+  height: 24px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+#borda {
+  background-color: #ffffff;
+  border-radius: 8px;
+  height: fit-content ;
+  width: 90%;
+  
+
+  
+  
+}
+#borda ul{
+  align-items: flex-start;
+}
+
+.silver {
+  background-color: #f3f3f3;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+#text-paciente {
+  font-family: "Comfortaa", cursive;
+  font-size: 24px;
+}
+
+#teste {
+  border: solid 1px #030303;
+}
+
+#btn-cadastro {
+  width: 197px;
+  height: 52px;
+  border-radius: 30px;
+  background-color: #017849;
+  color: white;
+}
+
+#border-start {
+  width: 304px;
+  height: 51px;
+  border-radius: 0px;
+  /* border: solid 1px lack; */
+}
+
+#btn-search {
+  background-color: #00995d;
+  color: white;
+  width: 120px;
+  height: 50px;
+
+  
+ 
+}
+
+.blue-name {
+  color: #2f80ed;
+  font-family: "Montserrat", sans-serif;
+}
+.btn-loggout {
+  font-family: "Comfortaa", cursive;
+  color: #00995d;
+  font-size: 24px;
+  
+  
+
+  
+}
+.btn-loggout:hover{
+  color: #00995d;
+}
+
+.dropdown-menu{
+  width: 279px;
+  height: 124px;
+}
+
+#exampleModalLabel{
+  color: #00995d;
+}
+
+.container-input{
+  width: 327px;
+  height: 47.92;
+
+}
+
+ #space-modal {
+  width: 1093px;
+  height: 580px;
+  
+} 
+
+#create{
+  width: 147px;
+  height: 48px;
+}
+
+.triangulo{
+  /* border: solid 1px black; */
+  position: relative;
+  left: 100px;
+  bottom: 25px;
+  background: linear-gradient(358.25deg, rgba(229, 229, 229, 0.68) 19.64%, #FFFFFF 75.78%);
+}
+
+#testemodal{
+  display: none;
+}
+
+.logofundo{
+  background-image: url(../aulaextraJS/awaitasync/logoFundo.png);
+  background-repeat: no-repeat;
+  background-color: #E5E5E5;
+   
+}
+
+.btn-login{
+  background-color: #017849;
+ color: #017849;
+  text-decoration: none;
+  
+}
+.box-login button{
+  border-radius: 5px;
+ 
+  
+}
+.box-login button a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#prosseguir a{
+  text-decoration: none;
+  color: white;
+}
