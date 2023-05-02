@@ -346,9 +346,30 @@ document.getElementById('formPesquisar').addEventListener('submit', async (event
 
     document.getElementById('allpatients').innerHTML = "";
     pesquisaJSON.forEach(paciente => {
-      showpatients(paciente);
+      imprimirCadaPaciente(paciente);
     })
     
   }
   console.log()
 })
+
+function imprimirCadaPaciente(valorPaciente) {
+    document.getElementById('allpatients').innerHTML = document.getElementById('allpatients').innerHTML +
+    ` 
+    <tr>
+      <th scope="row">${valorPaciente.id}</th>
+      <td>${valorPaciente.nome}</td>
+      <td>${valorPaciente.cpf}</td>
+      
+      
+      <td class="text-center"> <button  type="button" class="btn p-0 border-0 border-0"><a href="/prontuario.html"><img  class="green " src="/icones/calendar-icon.svg" alt=""></a></button> 
+
+      <button data-bs-toggle="modal" data-bs-target="#editpatient
+      " onclick="editpatient(${valorPaciente.id})" type="button" class="btn p-0 border-0 border-0">
+
+      <img class="blue" src="/icones/pen-edit.svg" alt=""></button> 
+
+      <button onclick="deletepatient(${valorPaciente.id})" type="button" class="btn p-0 border-0 border-0"><img class="red" src="/icones/trash-icon.svg" alt=""></button></td>
+    </tr>
+    ` 
+}
