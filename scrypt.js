@@ -341,7 +341,8 @@ document.getElementById('formPesquisar').addEventListener('submit', async (event
 
   const  palavrachave = document.getElementById('border-start').value.trim();
   if(palavrachave !== ''){
-    const pesquisa = await fetch(`http://localhost:3000/patients?nome_like=${palavrachave}`);
+    // const pesquisa = await fetch(`http://localhost:3000/patients?nome_like=${palavrachave}`); 
+    const pesquisa = await fetch(universal+`/patients?nome_like=${palavrachave}`);
     const pesquisaJSON = await pesquisa.json();
 
     document.getElementById('allpatients').innerHTML = "";
