@@ -74,6 +74,36 @@
       "estadocivil": "Solteiro",
       "mae": "Vanda Batista Valle",
       "pai": "Josildo Barrada Portugal"
+    },
+    {
+      "id": 6,
+      "cpf": "",
+      "nome": "Anderson Moises Arndt Velloso",
+      "datadenascimento": "",
+      "email": "vellso.anderson@gmail.com",
+      "sexo": "Sexo",
+      "nacionalidade": "Digite",
+      "naturalidade": "",
+      "profissao": "",
+      "escolaridade": "",
+      "estadocivil": "Digite",
+      "mae": "",
+      "pai": ""
+    },
+    {
+      "id": 7,
+      "cpf": "",
+      "nome": "Mario dias Coelho",
+      "datadenascimento": "",
+      "email": "jonathan.solarweg@gmail.com",
+      "sexo": "Sexo",
+      "nacionalidade": "Digite",
+      "naturalidade": "",
+      "profissao": "",
+      "escolaridade": "",
+      "estadocivil": "Digite",
+      "mae": "",
+      "pai": ""
     }
   ]
 }

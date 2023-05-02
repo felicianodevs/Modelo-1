@@ -331,7 +331,24 @@ async function saveedit(id, editar) {
 }
 
 
-async function get_filterPacient(nome){
-  const res_fetch = await fetch('http://localhost:3000/patients?q='+ nome)
-  const reg_patients = await res_fetch.json()
-}
+//   async function get_filterPacient(nome){
+//   const res_fetch = await fetch('http://localhost:3000/patients?q='+ nome)
+//   const reg_patients = await res_fetch.json()
+// }
+
+document.getElementById('formPesquisar').addEventListener('submit', async (evento) =>{
+  evento.preventDefault()
+
+  const  palavrachave = document.getElementById('border-start').value.trim();
+  if(palavrachave !== ''){
+    const pesquisa = await fetch(`http://localhost:3000/patients?nome_like=${palavrachave}`);
+    const pesquisaJSON = await pesquisa.json();
+
+    document.getElementById('allpatients').innerHTML = "";
+    pesquisaJSON.forEach(paciente => {
+      showpatients(paciente);
+    })
+    
+  }
+  console.log()
+})
